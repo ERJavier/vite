@@ -3,6 +3,7 @@ import javascriptLogo from './javascript.svg';
 import { setupCounter } from './counter.js';
 import buttonSyles from './button.module.css';
 import imagen1 from './vite2.svg';
+import data from './data.json';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -22,6 +23,7 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
   <img id="img" />
+  <pre>${JSON.stringify(data.user)}</pre>
 `
 document.getElementById('btn').className = buttonSyles.btn;
 setupCounter(document.querySelector('#counter'));

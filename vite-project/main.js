@@ -6,7 +6,7 @@ import imagen1 from './vite2.svg';
 import data from './data.json';
 import suma from './suma';
 
-console.log(`suma 2+3` ${suma(2,3)}) 
+console.log(`suma 2+3 = ${suma(2,3)}`) 
 
 const modules = import.meta.glob('./modules/*.js');
 
